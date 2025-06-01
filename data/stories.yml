@@ -1,0 +1,27 @@
+version: "3.1"
+stories:
+- story: order tracking flow
+  steps:
+  - intent: order_tracking
+  - action: action_ask_order_id
+  - action: action_get_order_status
+
+- story: product search flow
+  steps:
+  - intent: product_search
+  - action: action_search_product
+
+- story: report issue flow
+  steps:
+  - intent: report_issue
+  - action: action_report_issue
+
+- story: promotion flow
+  steps:
+  - intent: promotions
+  - action: action_show_promotions
+
+- story: human handoff
+  steps:
+  - intent: human_handoff
+  - action: action_handoff

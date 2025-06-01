@@ -1,0 +1,31 @@
+version: "3.1"
+nlu:
+- intent: order_tracking
+  examples: |
+    - Where is my order?
+    - Track my order
+    - I want to know my order status
+
+- intent: product_search
+  examples: |
+    - Do you have oat milk?
+    - Is almond milk available?
+    - Show me bananas
+
+- intent: report_issue
+  examples: |
+    - I got the wrong item
+    - My bread is damaged
+    - Something is missing
+
+- intent: promotions
+  examples: |
+    - Any discounts today?
+    - Promo codes?
+    - Sales?
+
+- intent: human_handoff
+  examples: |
+    - I want to talk to support
+    - Get me a human
+    - Speak to someone
