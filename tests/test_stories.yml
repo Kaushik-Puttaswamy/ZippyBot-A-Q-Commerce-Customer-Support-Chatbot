@@ -1,0 +1,8 @@
+version: "3.1"
+stories:
+- story: test order tracking
+  steps:
+  - user: |
+      Where is my order?
+    intent: order_tracking
+  - action: action_ask_order_id

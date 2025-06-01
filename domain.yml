@@ -1,0 +1,28 @@
+version: "3.1"
+intents:
+  - order_tracking
+  - product_search
+  - report_issue
+  - promotions
+  - human_handoff
+
+entities:
+  - order_id
+  - product_name
+
+slots:
+  order_id:
+    type: text
+    influence_conversation: true
+
+responses:
+  utter_fallback:
+    - text: "Sorry, I didn't understand that. Try asking something like 'Track my order'."
+
+actions:
+  - action_ask_order_id
+  - action_get_order_status
+  - action_search_product
+  - action_report_issue
+  - action_show_promotions
+  - action_handoff
