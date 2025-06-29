@@ -1,11 +1,5 @@
 # ZippyBot – Q-Commerce Chatbot
 
-This chatbot helps customers track orders, search products, report issues, and get promotions.
+![WIP](https://img.shields.io/badge/status-in--progress-yellow)
 
-## Run Instructions
-```bash
-pip install -r requirements.txt
-rasa train
-rasa run actions &
-rasa shell
-```
+> 🚧 **Project Status:** This project is currently under active development. Features may change or break during updates.
