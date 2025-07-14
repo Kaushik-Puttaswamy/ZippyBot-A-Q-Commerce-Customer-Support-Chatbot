@@ -1,11 +1,26 @@
-# ZippyBot – Q-Commerce Chatbot
 
-This chatbot helps customers track orders, search products, report issues, and get promotions.
+# ZippyBot – Q-Commerce Customer Support Chatbot
 
-## Run Instructions
+### Features
+- Order tracking
+- Refund & FAQ support
+- GPT fallback for smart replies
+- Telegram Bot Interface
+
+### Run the Backend
 ```bash
-pip install -r requirements.txt
-rasa train
-rasa run actions &
-rasa shell
+uvicorn backend.main:app --reload
 ```
+
+### Start Telegram Bot
+```bash
+python telegram_bot/bot.py
+```
+
+### Env Setup
+- `.env` with your API keys
+
+### Future Improvements
+- Real DB integration
+- Live agent escalation
+- Multilingual support
