@@ -1,5 +1,26 @@
-# ZippyBot – Q-Commerce Chatbot
 
-![WIP](https://img.shields.io/badge/status-in--progress-yellow)
+# ZippyBot – Q-Commerce Customer Support Chatbot
 
-> 🚧 **Project Status:** This project is currently under active development. Features may change or break during updates.
+### Features
+- Order tracking
+- Refund & FAQ support
+- GPT fallback for smart replies
+- Telegram Bot Interface
+
+### Run the Backend
+```bash
+uvicorn backend.main:app --reload
+```
+
+### Start Telegram Bot
+```bash
+python telegram_bot/bot.py
+```
+
+### Env Setup
+- `.env` with your API keys
+
+### Future Improvements
+- Real DB integration
+- Live agent escalation
+- Multilingual support
